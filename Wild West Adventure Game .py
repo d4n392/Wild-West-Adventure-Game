@@ -1,5 +1,3 @@
-
-
 print("Welcome to the Wild West boy.")
 print("Your mission is to stay alive.")
 
@@ -18,14 +16,22 @@ if first_choice == "yes":
             if fourth_choice == "yes":
                 # Game Over.
                 print("Sionara sucka! You DEAD.")
+            elif fourth_choice == "no":
+                print("That's not for you to decide! A gentleman's duel is in order.\n Meet me at high noon and I'll show you how I got that scar....To be continued.")
             else:
-                print("That's not for you to decide! A gentlman's dual is in order.\n Meet me at high noon and I'll show you how I got that scar....To be continued.")
-        else:
+                print("user input not recognized, YOU DIED.")
+        elif third_choice == "ignore":
             # Game Over.
             print("You stare ahead counting the splinters in the wall as you finish your once chilled mug of Nuka Cola...")
             print("This can't be how the story ends? But it's already over.")
+        else:
+            print("user input not recognized, YOU DIED.")
+    elif second_choice == "no":
+        print("You find a booth in the dimly lit corner, comfortably sit back, relax and enjoy yourself for once.\n 'I deserve this' you think as you sip your Nuka Cola.")
     else:
-        print("You find a booth in the dimly lit corner, comfortably sit back, relax and enjoy yourself for once.\n I deserve this you think as you sip your Nuka Cola.")
-else:
+        print("user input not recognized, YOU DIED.")
+elif first_choice == "no":
     # Game Over.
     print("You're too good for this town anyway you think,\n as you ride off on your trusty steed to wreak havoc on the next town.")
+else:
+    print("user input not recognized, YOU DIED.")
